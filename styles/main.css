@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,700);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
+
+/*------ Main CSS -------*/
+
+body { background:#ccc; }
+
+.helvetica { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+.georgia { font-family:Georgia, "Times New Roman", Times, serif; }
+.myriad { font-family:"Myriad Pro"; }
+.opensans { font-family: 'Open Sans', sans-serif; }
+.fatface { font-family: 'Abril Fatface', cursive; }
+
+.white { color:#fff; text-shadow:-2px 2px 2px #000; }
+.gray { color:#444; text-shadow:-2px 2px 2px #777; }
+.maroon { color:#904848; text-shadow:-2px 2px 2px #566c11; }
+.teal { color:#1d4f62; text-shadow:0 1px 0 #CCC, 0 2px 0 #C9C9C9, 0 3px 0 #BBB, 0 4px 0 #B9B9B9, 0 5px 0 #AAA, 
+		0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 
+        0, 0, .2), 0 5px 5px rgba(0, 0, 0, .25), 0 1px 1px rgba(0, 0, 0, .2), 0 7px 20px rgba(0, 0, 0, .15) }
+
+.teal-back { background:#1d4f62;}
+
+.vertmid { vertical-align:middle; }
+.vertbot { vertical-align:bottom; }
+.thick { font-weight:700; }
+
+.fontbeastly { font:700 60px/75px 'Abril Fatface', cursive; }
+.fontwow { font:700 46px/54px 'Open Sans', sans-serif; }
+.fonthuge { font:400 34px/40px Arial, Helvetica, sans-serif; }
+.fontxlrg { font:400 28px/34px Arial, Helvetica, sans-serif; }
+.fontlrg { font:22px/28px Arial, Helvetica, sans-serif; }
+.fontmed { font:400 16px/20px Arial, Helvetica, sans-serif; }
+.fontsml { font:400 12px/18px Arial, Helvetica, sans-serif; }
+.fontxsml { font:400 11px/15px  Arial, Helvetica, sans-serif; }
+
+.outerMain { width:100%; }
+.innerMain { width:495px; margin:200px auto 0; text-align:center; border-radius:5px; border:1px solid #DDD; box-shadow:inset -2px 3px 4px #777; padding:22px; background:#FFF; }
