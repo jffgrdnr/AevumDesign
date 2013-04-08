@@ -3,23 +3,27 @@
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 @import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
 
-/*------ Main CSS -------*/
+/*----------------------------- Main CSS -----------------------------*/
 
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; margin:0; padding:0; }
 body { background:#ccc; }
+.clearfix:after{ clear:both; content:"."; display:block; height:0; visibility:hidden; }
+* html .clearfix, *:first-child+html .clearfix { display:block; zoom:1; } 
 
+/*------ fonts -------*/
 .helvetica { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
 .georgia { font-family:Georgia, "Times New Roman", Times, serif; }
 .myriad { font-family:"Myriad Pro"; }
 .opensans { font-family: 'Open Sans', sans-serif; }
 .fatface { font-family: 'Abril Fatface', cursive; }
 
+/*------ font colors and styles -------*/
 .white { color:#fff; text-shadow:-2px 2px 2px #000; }
 .gray { color:#444; text-shadow:-2px 2px 2px #777; }
 .maroon { color:#904848; text-shadow:-2px 2px 2px #566c11; }
 .teal { color:#1d4f62; text-shadow:0 1px 0 #CCC, 0 2px 0 #C9C9C9, 0 3px 0 #BBB, 0 4px 0 #B9B9B9, 0 5px 0 #AAA, 
 		0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 
         0, 0, .2), 0 5px 5px rgba(0, 0, 0, .25), 0 1px 1px rgba(0, 0, 0, .2), 0 7px 20px rgba(0, 0, 0, .15) }
-
 .teal-back { background:#1d4f62;}
 
 .vertmid { vertical-align:middle; }
@@ -35,5 +39,63 @@ body { background:#ccc; }
 .fontsml { font:400 12px/18px Arial, Helvetica, sans-serif; }
 .fontxsml { font:400 11px/15px  Arial, Helvetica, sans-serif; }
 
+.action { display:inline-block; color:#fff; border-radius:3px; padding:5px 15px; background:#ac652c; cursor:pointer; text-shadow:1px 1px 4px #333; box-shadow:2px 2px 3px #444; }
+.action:hover { background:#cd7937;}
+.action:active { background:#ac652c; }
+
+
+/*----------------------------------- Main Content -----------------------*/
 .outerMain { width:100%; }
-.innerMain { width:495px; margin:200px auto 0; text-align:center; border-radius:5px; border:1px solid #DDD; box-shadow:inset -2px 3px 4px #777; padding:22px; background:#FFF; }
+/* ---- old home page iteration ---  .innerMain { width:495px; margin:200px auto 0; text-align:center; border-radius:5px; border:1px solid #DDD; box-shadow:inset -2px 3px 4px #777; padding:22px; background:#FFF; }*/
+.top { background:#333; 
+background: #333; /* for non-css3 browsers */ 
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#555'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#555)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #333,  #555); /* for firefox 3.6+ */
+border-bottom:2px solid #eaeaea; 
+box-shadow:inset 2px 2px 2px #eaeaea; margin:5px 0 0 0; padding:10px 0; position:relative; }
+.top .angle { width:100%; height:200px; position:absolute; top:-65%; left:-20%; opacity:.5;  
+background: #fe2517; /* for non-css3 browsers */ 
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe2517', endColorstr='#e22013'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#fe2517), to(#e22013)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #fe2517,  #e22013); /* for firefox 3.6+ */
+transform:rotate(-27deg); 
+-ms-transform:rotate(-27deg); /* IE 9 */ 
+-moz-transform:rotate(-27deg); /* Firefox */ 
+-webkit-transform:rotate(-27deg); /* Safari and Chrome */ 
+-o-transform:rotate(-27deg); /* Opera */ }
+.top nav { margin:0 auto; width:300px; height:100%; }
+.top nav li { height:100%; float:left; background:red; }
+.top nav li.shown { display:none; }
+.top .angle .triangle { width:2px; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-bottom: 8px solid #333; position:relative; bottom:-200px; left:-1082px; display:block; }
+.top .stryker { background:url("../img/strykerBlack.png"); height:185px; width:247px; margin:-15px 0 0 0; float:right; }
+
+.display { background:#108f9b; min-height:200px; height:100%; }
+.display .slideSet { margin:0 auto; width:600px; position:relative; }
+.display .slideSet .slide { width:300px; height:200px; }
+.display .slide.left { background:#108f9b; position:absolute; top:0; left:0; }
+.display .slide.down { background:#108f9b; position:absolute; top:0; left:0;  
+transform:rotate(-90deg); 
+-ms-transform:rotate(-90deg); /* IE 9 */ 
+-moz-transform:rotate(-90deg); /* Firefox */ 
+-webkit-transform:rotate(-90deg); /* Safari and Chrome */ 
+-o-transform:rotate(-90deg); /* Opera */ }
+.display .slide.right { background:#108f9b; position:absolute; top:0; right:25%;}
+.display .slide.up { background:#108f9b; position:absolute; top:0; right:25%;
+transform:rotate(-90deg); 
+-ms-transform:rotate(-90deg); /* IE 9 */ 
+-moz-transform:rotate(-90deg); /* Firefox */ 
+-webkit-transform:rotate(-90deg); /* Safari and Chrome */ 
+-o-transform:rotate(-90deg); /* Opera */}
+
+.content { background:#555; }
+footer { background:#888; }
+
+
+
+
+
+
+
+
+
